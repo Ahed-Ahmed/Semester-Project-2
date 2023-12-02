@@ -1,11 +1,22 @@
 # Semester-Project-2
 
+1. Download the Repository:
+   Unzip the downloaded folder.
 
-# Frontend part:
+2. Open in VS Code:
+   Open Visual Studio Code.
+   Navigate to File > Open Folder and select the unzipped folder to open in VS Code.
+
+3. Change Directory:
+   In the VS Code terminal, navigate to the project directory.
+
+4. Install Dependencies:
+
+- Frontend part:
   • npm install
   • npm start
 
-# Strapi part:
+- Strapi part:
   • npm install
   • install graphql:
     1. Terminal method
