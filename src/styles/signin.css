@@ -1,0 +1,118 @@
+.signin {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.signin > img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.signin__wrap {
+  width: 100%;
+  backdrop-filter: blur(4px);
+  height: 100%;
+  padding: 40px;
+  padding-top: 140px;
+}
+
+.signin__form {
+  width: 400px;
+  height: 400px;
+  margin: auto auto;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.4);
+}
+
+.form__header {
+  margin-bottom: 20px;
+}
+
+.form__header {
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+
+.signin__form fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+.signin__form label {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 1.4rem;
+}
+.form__input {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  background: rgba(178, 108, 15, 0.5);
+  border-radius: 6px 0 0 6px;
+}
+.form__input:focus-within {
+  box-shadow: 0 0 3px 2px rgba(178, 108, 15, 0.8);
+}
+.form__input svg {
+  width: 36px;
+}
+.signin__form input {
+  width: 100%;
+  padding: 6px 8px;
+  font-size: 16px;
+  border: none;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.signin__form input:focus-visible {
+  outline: none;
+}
+
+.signin__form button {
+  color: #fff;
+  background: #b26c0f;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin: 8px 0;
+  padding: 5px 10px;
+  width: 150px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 2px 5px 0 rgba(132, 137, 137, 0.75);
+  transition: all 100ms ease-in;
+  margin: auto;
+}
+
+.signin__form button:hover {
+  background: #fff;
+  color: #b26c0f;
+  transition: all 100ms ease-in;
+}
+.signin__form p {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .signin__wrap {
+    padding: 100px 20px;
+  }
+
+  .signin__form {
+    width: auto;
+    height: auto;
+  }
+  .signin__form button {
+    margin-bottom: 30px;
+  }
+}

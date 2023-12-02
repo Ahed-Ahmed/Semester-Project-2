@@ -1,0 +1,129 @@
+.cart {
+  padding-top: 74px;
+}
+.cart__layout {
+  width: 100%;
+  padding: 15px 20px;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cart header {
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+.cart__shopping h2 {
+  padding: 15px 0;
+  font-size: 30px;
+  line-height: 35px;
+}
+.cart__items {
+  margin: 0;
+  padding: 0;
+}
+
+.cart__redirect {
+  display: flex;
+  width: 100%;
+}
+.cart__redirect-left {
+  width: 100%;
+  max-width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cart__redirect-right {
+  width: 60%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.cart__redirect-right h1 {
+  font-size: 2rem;
+  width: 100%;
+}
+
+.cart__subtotal {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid #ddd;
+  height: 200px;
+  background: #e4e2e226;
+}
+.cart__subtotal > * {
+  font-size: 32px;
+  line-height: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.cart__subtotal p {
+  font-size: 16px;
+}
+
+.cart__checkout {
+  background: #b26c0fa3;
+  text-align: center;
+  outline: none;
+  border: none;
+  padding: 5px 10px;
+  width: 200px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 2px 5px 0 rgba(132, 137, 137, 0.2);
+  transition: all 200ms ease;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: auto;
+}
+.cart__checkout:hover {
+  box-shadow: 0 2px 5px 0 rgba(132, 137, 137, 0.8);
+  transition: all 200ms ease;
+  background-image: linear-gradient(
+    to right,
+    #82cde4 0%,
+    #fff 50%,
+    #82cde4 100%
+  );
+  background-size: 50% auto;
+  animation: loading 0.8s linear infinite;
+}
+
+@keyframes loading {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .cart__layout {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .cart__layout {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .cart__subtotal {
+    height: auto;
+  }
+  .cart__subtotal div {
+    flex-direction: column;
+    align-items: center;
+  }
+}

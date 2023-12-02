@@ -1,0 +1,128 @@
+.dashboard {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: #b26c0f70;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard__wrap {
+  width: 100%;
+  max-width: 800px;
+  min-height: 400px;
+  margin: auto;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, #b26b0f23, #b26c0f);
+  max-height: 600px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+.dashboard table {
+  width: 100%;
+  position: relative;
+}
+
+.dashboard tr {
+  border-bottom: 1px solid #ddd;
+}
+.dashboard th,
+.dashboard td {
+  padding: 10px;
+  text-align: center;
+  max-height: 30px;
+}
+
+.dashboard__filter {
+  width: 100%;
+  padding: 15px 20px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.dashboard__filter form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.dashboard__filter label {
+  line-height: 16px;
+  width: fit-content;
+  margin-right: 30px;
+}
+.dashboard__filter input {
+  margin-right: 5px;
+  line-height: 18px;
+}
+
+.dashboard__filter span {
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.dashboard__btn {
+  background: #adb5bd;
+  text-align: center;
+  outline: none;
+  border: none;
+  margin: 12px 0;
+  padding: 5px 10px;
+  width: 150px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 2px;
+  text-transform: capitalize;
+  box-shadow: 0 2px 5px 0 rgba(132, 137, 137, 0.2);
+  transition: all 200ms ease;
+}
+.dashboard__btn:hover {
+  box-shadow: 0 2px 5px 0 rgba(132, 137, 137, 0.75);
+  transition: all 200ms ease;
+}
+.dashboard__btn a:hover {
+  color: #111;
+}
+
+@media (max-width: 1050px) {
+  .dashboard {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 650px) {
+  .dashboard__filter form {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .dashboard__filter span {
+    margin-left: 0;
+    margin: auto;
+  }
+  .dashboard__btn {
+    align-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .dashboard {
+    padding: 0 10px;
+  }
+  .dashboard__filter span {
+    margin: 0;
+    margin-left: auto;
+  }
+  .dashboard td {
+    padding: 5px;
+    font-size: 14px;
+  }
+  .dashboard td > a {
+    display: block;
+    overflow: hidden;
+  }
+}
