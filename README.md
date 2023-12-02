@@ -19,11 +19,15 @@
 ### Strapi part:
   1. npm install
   2. install graphql:
+
     a. Terminal method
+    
       - cd Strapi folder
       - npm run strapi install graphql
       - npm run develop
+      
     b. Amin UI method
+    
       - cd Strapi folder
       - npm run develop
       - Open Admin UI and login: http://localhost:1337/admin
